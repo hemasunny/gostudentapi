@@ -4,7 +4,7 @@ import(
 	"time"
 )
 type User struct{
-	ID int
+	ID int64
     Name string
 	Email string
 	Password_hash string
