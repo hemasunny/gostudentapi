@@ -1,0 +1,34 @@
+1.
+create a folder for the project
+
+2. initialize github repository
+git init
+
+3. configure remote origin
+git remote add origin https://github.com/hemasunny/gostudentapi.git    
+
+
+4. check the remote origin
+git remote -v
+
+5.create go.mod file
+ go mod init github.com/hemasunny/gostudentapi
+
+6. create 2 branches -preprod & develop in the repository and push them to origin
+
+   i) List the existing branches
+        git branch 
+           or
+        git branch -l  
+         or
+        git branch --list
+
+        git  branch  -a ==> list all both local & remote branches
+
+
+   ii) create a new branch
+
+6. create the main.go file with the initial content
+
+
+
