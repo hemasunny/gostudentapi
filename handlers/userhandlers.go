@@ -32,3 +32,13 @@ func NewUserHandler(c *gin.Context)  {
 
 	
 }
+
+func GetUsers(c *gin.Context)  {
+
+	if len(users)>0{
+		c.JSON(http.StatusOK, users)
+	}else{
+		c.JSON(http.StatusNotFound, gin.H{"message":"no data exists"})
+	}
+	
+}

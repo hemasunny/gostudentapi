@@ -14,7 +14,9 @@ func main(){
 
 	  router.GET("/",HomeHandler )
 
-	  router.GET("/student",handlers.NewUserHandler )
+	  router.GET("/student", handlers.GetUsers)
+
+	  router.POST("/student",handlers.NewUserHandler )
 
 	  router.Run()//by default port 8080
 }
