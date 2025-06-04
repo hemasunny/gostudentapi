@@ -3,7 +3,7 @@ package pkg
 import(
 	"time"
 )
-type Student struct{
+type User struct{
 	ID int
     Name string
 	Email string
