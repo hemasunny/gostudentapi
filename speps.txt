@@ -27,8 +27,51 @@ git remote -v
 
 
    ii) create a new branch
+           git branch develop
 
-6. create the main.go file with the initial content
+   iii) switch to new branch
+          git checkout develop
 
+   iv) add the files to staging area
+	git add . 
 
+   v) do the initial commit
+	git commit -m "Initial commit"
+
+   vi) push changes to remote branch 
+            git push origin develop
+
+   vii) do steps  ii to vi for the second branch preprod
+          
+
+6. down gin framework
+   go get github.com/gin-gonic/gin
+
+7. create the main.go file with the initial content
+
+package main
+
+import(
+	"github.com/gin-gonic/gin"
+	"net/http"
+)
+
+func HomeHandler(c *gin.Context){
+	c.JSON(http.StatusOK, "HOME PAGE")
+}
+func main(){
+	  router := gin.Default()
+
+	  router.GET("/",HomeHandler )
+
+	  router.Run()//by default port 8080
+}
+
+8. add main.go to the staging area
+
+9.  if not in develop bracnch give git checkout develop, command to switch to develop branch
+
+10. commit the changes to develop branch
+
+11. push changes to remote develop branch develop
 
